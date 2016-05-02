@@ -1,1 +1,74 @@
 \section*{Výsledky měření}
+Ke tlumení jsme používali čtyři tlumící disky (viz tabulka \ref{tab::disky}).
+
+\begin{tabulka}[htbp]
+\centering
+\begin{tabular}{ccc}
+barva & hmotnost (\si{\g}) & průměr (\si{\cm}) \\ \hline
+oranžová &   \num{5.59(1)}  & \num{13.5(5)}   \\ 
+zelená &  \num{5.62(1)}  &  \num{15.5(5)}   \\ 
+modrá &   \num{5.45(1)} & \num{18.7(5)}   \\ 
+žlutá & \num{5.38(1)} &  \num{21.0(5)}     \\ 
+\end{tabular}
+\caption{Tlumící disky}
+\label{tab::disky}
+\end{tabulka}
+
+Při měření netlumených kmitů jsme místo tlumícího disku připevnili k magnetu přívažek o hmotnosti \SI{5.27(1)}{\g}.
+Kruhovou frekvenci netlumených kmitů jsme naměřili $\omega = \SI{6.89(2)}{\radian\per\s}$.
+
+Frekvence a konstanty tlumení jsme změřili pro všechny čtyři tlumící disky.
+Naměřené hodnoty jsou uvedeny v tabulce \ref{tab::tlumeny}.
+Časová závislost amplitudy pro modrý disk je vynesena do grafu \ref{grp::modrytlum}.
+
+\begin{tabulka}[htbp]
+\centering
+\begin{tabular}{ccc}
+tlumící disk & $\omega_1$ (\si{\radian\per\s}) & $\delta$ (\si{\per\s}) \\ \hline
+oranžový &	\num{6.86(2)}	&  \num{0.021(1)}  \\ 
+zelený &	\num{6.84(2)}	&  \num{0.031(1)}  \\ 
+modrý &		\num{6.82(2)}	&  \num{0.038(1)}  \\ 
+žlutý &		\num{6.81(2)}	&  \num{0.049(1)}  \\ 
+\end{tabular}
+\caption{Tlumené kmity}
+\label{tab::tlumeny}
+\end{tabulka}
+
+\begin{graph}[htbp] 
+\centering
+%\input{graf.tex}
+\caption{Graf 1}
+\label{grp::modrytlum}
+\end{graph}
+
+Nucené kmity jsme měřili pouze s modrým tlumícím diskem.
+Očekávaná resonanční frekvence podle \eqref{eq::resomega} byla \SI{1.096}{\hertz}, nicméně skutečná resonanční frekvence byla přibližně \SI{1.08}{\hertz}.
+Naměřené amplitudy $A_v$ a fázové posuny $\gamma$ pro různé frekvence zdroje jsou uvedeny v tabulce \ref{tab::nuceny} a v grafech \ref{grp::nucenyamplitudy} a \ref{grp::nucenyfaze}.
+
+
+\begin{tabulka}[htbp]
+\centering
+\begin{tabular}{ccc}
+tlumící disk & $\omega_1$ (\si{\radian\per\s}) & $\delta$ (\si{\per\s}) \\ \hline
+oranžový &	\num{6.86(2)}	&  \num{0.021(1)}  \\ 
+zelený &	\num{6.84(2)}	&  \num{0.031(1)}  \\ 
+modrý &		\num{6.82(2)}	&  \num{0.038(1)}  \\ 
+žlutý &		\num{6.81(2)}	&  \num{0.049(1)}  \\ 
+\end{tabular}
+\caption{Nucené kmity}
+\label{tab::nuceny}
+\end{tabulka}
+
+\begin{graph}[htbp] 
+\centering
+%\input{graf.tex}
+\caption{Graf 1}
+\label{grp::nucenyamplitudy}
+\end{graph}
+
+\begin{graph}[htbp] 
+\centering
+%\input{graf.tex}
+\caption{Graf 1}
+\label{grp::nucenyfaze}
+\end{graph}
