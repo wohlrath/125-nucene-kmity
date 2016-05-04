@@ -1,8 +1,8 @@
 \section*{Teoretická část}
 
-Budeme pozorovat pohyb harmonického oscilátoru (závaží zavěšené na pružině) ve třech případech: oscilátor kmitá sám a je tlumení je zanedbatelné, oscilátor je tlumený, na tlumený oscilátor působí periodická vnější síla
+Budeme pozorovat pohyb harmonického oscilátoru (závaží zavěšené na pružině) ve třech případech: oscilátor kmitá sám a jeho tlumení je zanedbatelné, oscilátor je tlumený, na tlumený oscilátor působí periodická vnější síla
 
-V případě, že oscilátor není výrazně tlumený, kmitá s kruhovou frekvencí $\omega$.
+V případě, že oscilátor není tlumený, kmitá s kruhovou frekvencí $\omega$.
 
 Působí-li na harmonický oscilátor působit síla úměrná rychlosti pohybu, má jeho pohybová rovnice tvar
 \begin{equation} \label{eq::pohybovarovnicetlumeny}
@@ -25,7 +25,7 @@ Pokud budeme na oscilátor působit periodickou vnější silou s harmonickým p
 \end{equation}
 kde $F_0$ je maximální působící síla a $m$ je hmotnost oscilátoru.
 Řešení má tvar \cite{skripta}
-\begin{equation}
+\begin{equation} \label{eq::reseninuceny}
 y=A \cdot e^{-\delta t} \cdot \sin (\omega_1 t+ \varphi_0) + A_v \cdot \sin (\Omega t + \gamma) \,,
 \end{equation}
 kde $A$ a $\varphi_0$ jsou integrační konstanty, $A_v$ a $\gamma$ jsou konstanty: \cite{skripta}
@@ -38,6 +38,8 @@ A_v=\frac{F_0}{m \omega^2} \frac{1}{\sqrt{
 \begin{equation}
 tan (\gamma) =- \frac{2\delta}{\omega}\cdot \frac{\Omega/\omega}{1-(\Omega/\omega)^2} \,.
 \end{equation}
+
+Po určité době (zakmitávací) vliv počátečních podmínek vymizí a v \eqref{eq::reseninuceny} zbyde jen druhý člen.
 
 Amplutuda $A_v$ nabývá maxima při kruhové frekvenci vnější síly
 \begin{equation} \label{eq::resomega}

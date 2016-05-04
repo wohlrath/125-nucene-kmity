@@ -1,12 +1,10 @@
 \section*{Podmínky, pomůcky a měřící přístroje}
-Měření proběhlo při pokojové teplotě (přibližně \SI{25}{\degreeCelsius}) a normílním atmosférickém tlaku.
+Měření proběhlo při pokojové teplotě (přibližně \SI{25}{\degreeCelsius}) a normálním atmosférickém tlaku.
 
 Jako oscilátor jsme použili permanentní magnet zavěšený na pružině.
 
-POZOR
 
 Pod magnetem byla umístěna cívka připojená k počítači, který nám umožňoval do ní pouštět střídavé napětí o zvolené frekvenci a také zobrazovat časový průběh napětí indukované magnetem.
-
 
 
 Indukované napětí by mělo být přibližně přímo úměrné okamžité rychlosti magnetu.
@@ -21,19 +19,17 @@ tento soubor hodnot prokládáme exponenciálou.
 
 \begin{graph}[htbp] 
 \centering
-%\input{graf.tex}
-\caption{Graf 1}
+\input{tlumpuvodni.tex}
+\caption{Naměřené hodnoty při kmitání tlumeném modrým diskem, graf ilustruje způsob zpracování}
 \label{grp::mericipristroje}
 \end{graph}
 
 Soustava nebyla kalibrovaná k měření výchylky, takže amplitudy u nuceného kmitání uvádíme pouze v poměru k nejvyšší naměřené hodnotě.
-Při pohybu harmonického oscilátoru platí, že maximální výchylka je úměrná maximální rychlosti.
-S ohledem na to, že tlumení bylo slabé, aproximujeme pohyb tlumeného oscilátoru netlumeným a budeme uvažovat, že maximální výchylka v krátkém časovém úseku po naměření maximální rychlosti je úměrná této rychlosti a tedy i naměřenému maximu indukovaného napětí.
 Při pohybu dolů bylo napětí opět vyšší, relativní velikost výchylky určíme jako rozdíl průměru kladných maxim a průměru záporných maxim (viz graf \ref{grp::nucenyilustrace}).
 
 \begin{graph}[htbp] 
 \centering
-%\input{graf.tex}
-\caption{Graf 1}
+\input{nucenyilustrace.tex}
+\caption{Ilustrace metody určení amplitudy při nucených kmitech, poměrnou amplitudu určíme jako vzdálenost dvou čárkovaných přímek}
 \label{grp::nucenyilustrace}
 \end{graph}

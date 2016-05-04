@@ -25,10 +25,10 @@ Naměřené hodnoty jsou uvedeny v tabulce \ref{tab::tlumeny}.
 \centering
 \begin{tabular}{ccc}
 tlumící disk & $\omega_1$ (\si{\radian\per\s}) & $\delta$ (\si{\per\s}) \\ \hline
-oranžový &	\num{6.86(2)}	&  \num{0.021(1)}  \\ 
-zelený &	\num{6.84(2)}	&  \num{0.031(1)}  \\ 
-modrý &		\num{6.82(2)}	&  \num{0.038(1)}  \\ 
-žlutý &		\num{6.81(2)}	&  \num{0.049(1)}  \\ 
+oranžový &	\num{6.86(1)}	&  \num{0.021(1)}  \\ 
+zelený &	\num{6.84(1)}	&  \num{0.031(1)}  \\ 
+modrý &		\num{6.82(1)}	&  \num{0.038(1)}  \\ 
+žlutý &		\num{6.81(1)}	&  \num{0.049(1)}  \\ 
 \end{tabular}
 \caption{Tlumené kmity}
 \label{tab::tlumeny}
@@ -36,39 +36,48 @@ modrý &		\num{6.82(2)}	&  \num{0.038(1)}  \\
 
 \begin{graph}[htbp] 
 \centering
-%\input{graf.tex}
-\caption{Graf 1}
+\input{tlumenymodry.tex}
+\caption{Časová závislost maximální výchylky při kmitání s modrým tlumícím diskem (hodnoty amplitudy jsou jen poměrné)}
 \label{grp::modrytlum}
 \end{graph}
 
 Nucené kmity jsme měřili pouze s modrým tlumícím diskem.
 Očekávaná resonanční frekvence podle \eqref{eq::resomega} byla \SI{1.096}{\hertz}, nicméně skutečná resonanční frekvence byla přibližně \SI{1.08}{\hertz}.
 Naměřené amplitudy $A_v$ a fázové posuny $\gamma$ pro různé frekvence zdroje jsou uvedeny v tabulce \ref{tab::nuceny} a v grafech \ref{grp::nucenyamplitudy} a \ref{grp::nucenyfaze}.
+Standardní chybu všech naměřených amplitud a fázových posunutí odhadujeme na \SI{10}{\percent}.
 
 
 \begin{tabulka}[htbp]
 \centering
 \begin{tabular}{ccc}
-tlumící disk & $\omega_1$ (\si{\radian\per\s}) & $\delta$ (\si{\per\s}) \\ \hline
-oranžový &	\num{6.86(2)}	&  \num{0.021(1)}  \\ 
-zelený &	\num{6.84(2)}	&  \num{0.031(1)}  \\ 
-modrý &		\num{6.82(2)}	&  \num{0.038(1)}  \\ 
-žlutý &		\num{6.81(2)}	&  \num{0.049(1)}  \\ 
+frekvence nutící síly (\si{\hertz}) & amplituda & fázový posun \\ \hline
+\num{1.050} & \num{0.19} & \SI{-23}{\degree} \\
+\num{1.060} & \num{0.29} & \SI{-28}{\degree} \\
+\num{1.070} & \num{0.48} & \SI{-43}{\degree} \\
+\num{1.075} & \num{0.77} & \SI{-64}{\degree} \\
+\num{1.080} & \num{1.00} & \SI{-101}{\degree} \\
+\num{1.085} & \num{0.95} & \SI{-144}{\degree} \\
+\num{1.090} & \num{0.80} & \SI{-139}{\degree} \\
+\num{1.095} & \num{0.53} & \SI{-182}{\degree} \\
+\num{1.100} & \num{0.36} & \SI{-205}{\degree} \\
+\num{1.110} & \num{0.25} & \SI{-200}{\degree} \\
+\num{1.120} & \num{0.19} & \SI{-203}{\degree} \\
+\num{1.130} & \num{0.15} & \SI{-194}{\degree} \\
 \end{tabular}
-\caption{Nucené kmity}
+\caption{Nucené kmity s modrým tlumícím diskem ($\delta = \SI{0.038(1)}{\per\second}$)}
 \label{tab::nuceny}
 \end{tabulka}
 
 \begin{graph}[htbp] 
 \centering
-%\input{graf.tex}
-\caption{Graf 1}
+\input{amp.tex}
+\caption{Závislost amplitudy na frekvenci budící síly (hodnoty amplitudy jsou jen poměrné)}
 \label{grp::nucenyamplitudy}
 \end{graph}
 
 \begin{graph}[htbp] 
 \centering
-%\input{graf.tex}
-\caption{Graf 1}
+\input{faz.tex}
+\caption{Závislost fázového posunu na frekvenci budící síly}
 \label{grp::nucenyfaze}
 \end{graph}
